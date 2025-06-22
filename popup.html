@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouTube Quick Settings</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <h1>YouTube Settings</h1>
+
+    <div class="setting-group">
+        <label for="speed-select">Default Playback Speed:</label>
+        <select id="speed-select">
+            <option value="" disabled>Figuring out available playback speeds</option>
+        </select>
+    </div>
+
+    <div class="setting-group">
+        <label for="quality-select">Default Video Quality:</label>
+        <select id="quality-select">
+            <option value="auto">Auto</option>
+            <option value="highres">High Res (8K)</option>
+            <option value="hd2160">4K (2160p)</option>
+            <option value="hd1440">1440p</option>
+            <option value="hd1080">1080p</option>
+            <option value="hd720">720p</option>
+            <option value="large">480p</option>
+            <option value="medium">360p</option>
+            <option value="small">240p</option>
+            <option value="tiny">144p</option>
+        </select>
+    </div>
+
+    <div class="last-used-settings">
+        <h2>Manually Set Video Settings:</h2>
+        <p>Speed: <span id="last-used-speed">N/A</span>
+            <button id="set-speed-default" class="set-default-btn" style="display:none;">Set as Default</button>
+        </p>
+        <p>Quality: <span id="last-used-quality">N/A</span>
+            <button id="set-quality-default" class="set-default-btn" style="display:none;">Set as Default</button>
+        </p>
+        <p class="note">These values are updated when you manually change settings on a YouTube video.</p>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

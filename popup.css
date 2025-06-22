@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 280px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    font-size: 1.2em;
+    color: #e52d27;
+    /* YouTube red */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.setting-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.last-used-settings {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.last-used-settings h2 {
+    font-size: 1.0em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.last-used-settings p {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.set-default-btn {
+    background-color: #28a745;
+    /* Green */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-left: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.set-default-btn:hover {
+    background-color: #218838;
+}
+
+.note {
+    font-size: 0.75em;
+    color: #777;
+    margin-top: 10px;
+}
